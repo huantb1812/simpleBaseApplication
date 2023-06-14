@@ -102,6 +102,10 @@
     <script>
       function sendData(){
        console.log(`A message from root app:`);
+       const event = new CustomEvent('event',{detail:'a message from root app'});
+        dispatchEvent(event)
+       const event2 = new CustomEvent('event2',{detail:'a message from root app'});
+        dispatchEvent(event2)
       }
     </script>
   </body>
