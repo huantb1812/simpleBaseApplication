@@ -16,10 +16,21 @@
   </route>
 
   -->
+  <div class="container">
+    <div class="left-menu">
+      <application name="@ihis/react-app1"></application>
+    </div>
 
-  <main>
-    <route default>
-      <application name="@single-spa/welcome"></application>
-    </route>
-  </main>
+    <main>
+      <route path="angular-app1">
+        <application name="@angularapp1/angular-app1"></application>
+      </route>
+      <route path="angular-app2">
+        <application name="@angularapp2/angular-app2"></application>
+      </route>
+      <route default>
+        <application name="@single-spa/welcome"></application>
+      </route>
+    </main>
+  </div>
 </single-spa-router>
