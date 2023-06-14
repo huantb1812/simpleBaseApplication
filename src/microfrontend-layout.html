@@ -1,4 +1,4 @@
-<single-spa-router>
+<single-spa-router >
   <!--
 
     This is the single-spa Layout Definition for your microfrontends.
@@ -15,14 +15,15 @@
     <application name="@org/settings"></application>
   </route>
 
-  -->
+-->
+  <application name="@workflow-app/workflow-app"></application>
   <div class="container">
     <div class="left-menu">
       <application name="@ihis/react-app1"></application>
     </div>
 
     <main>
-      <route path="angular-app1">
+      <route path="angular-app1" >
         <application name="@angularapp1/angular-app1"></application>
       </route>
       <route path="angular-app2">
